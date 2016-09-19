@@ -9,7 +9,6 @@ This package contains a number of examples using the javault library.
 [![Documentation Status](https://readthedocs.org/projects/javault-examples/badge/?version=latest)](http://javault-examples.readthedocs.io/en/latest/?badge=latest)
 
 
-
 ## Javault Runner
 
 Command line wrapper to _demonstrate_ the javault-core.
