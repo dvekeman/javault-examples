@@ -1,8 +1,14 @@
-# Javault
+# Javault Examples
 
 See https://github.com/dvekeman/javault
 
 This package contains a number of examples using the javault library.
+
+[![Build Status](https://travis-ci.org/dvekeman/javault-examples.svg?branch=master)](https://travis-ci.org/dvekeman/javault-examples)
+[![codecov](https://codecov.io/gh/dvekeman/javault-examples/branch/master/graph/badge.svg)](https://codecov.io/gh/dvekeman/javault-examples)
+[![Documentation Status](https://readthedocs.org/projects/javault-examples/badge/?version=latest)](http://javault-examples.readthedocs.io/en/latest/?badge=latest)
+
+
 
 ## Javault Runner
 
