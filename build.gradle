@@ -1,0 +1,44 @@
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+    buildscript {
+        repositories {
+            mavenCentral()
+        }
+        dependencies {
+            classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.0.RELEASE")
+        }
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'jacoco'
+
+    dependencies {
+        compile 'com.github.dvekeman:javault:0.0.1'
+
+        testCompile 'junit:junit:4.12'
+    }
+
+    jacocoTestReport {
+        reports {
+            xml.enabled true
+            csv.enabled false
+            html.destination "${buildDir}/jacocoHtml"
+        }
+    }
+
+    test {
+        jacoco {
+            append = false
+            destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+            classDumpFile = file("$buildDir/jacoco/classpathdumps")
+        }
+    }
+    check.dependsOn jacocoTestReport
+
+}

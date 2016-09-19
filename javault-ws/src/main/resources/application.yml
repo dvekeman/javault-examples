@@ -1,0 +1,4 @@
+server:
+  context-path: /javault-ws
+  tomcat: 
+    secure: true
