@@ -16,7 +16,7 @@ apply plugin: 'spring-boot'
 
 jar {
     baseName = 'javault-runner'
-    version =  '0.0.1'
+    version =  rootProject.ext.javaultVersion
 }
 
 bootRun {
