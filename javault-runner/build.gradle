@@ -30,7 +30,6 @@ repositories {
 }
 
 dependencies {
-    compile project(path: ":javault-core")
     compile("org.springframework.boot:spring-boot-starter"){
         exclude group: "ch.qos.logback", module:"logback-classic"
         exclude group: "org.slf4j", module: "log4j-over-slf4j"

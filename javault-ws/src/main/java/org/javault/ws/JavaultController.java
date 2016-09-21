@@ -60,7 +60,7 @@ public class JavaultController {
 
 	private WsVaultOutput doRunInVault0(String name, String source) throws HttpVaultException, GenericException {
 		//TODO: wrap in service
-		VaultRunner vaultRunner = new DefaultVaultRunner();
+		VaultRunner vaultRunner = new DefaultVaultRunner.Builder().build();
 		try {
 			VaultOutput output = vaultRunner.runInVault0(name, source).get(60, TimeUnit.SECONDS);
 			return new WsVaultOutput(output.getStatusCode(), output.getOutput());
@@ -77,7 +77,7 @@ public class JavaultController {
 
 	private WsVaultOutput doRunSnippetInVault0(String source) throws HttpVaultException, GenericException {
 		//TODO: wrap in service
-		VaultRunner vaultRunner = new DefaultVaultRunner();
+		VaultRunner vaultRunner = new DefaultVaultRunner.Builder().build();
 		try {
 			VaultOutput output = vaultRunner.runInVault0(source).get(60, TimeUnit.SECONDS);
 			return new WsVaultOutput(output.getStatusCode(), output.getOutput());

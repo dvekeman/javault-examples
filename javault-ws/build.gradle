@@ -32,8 +32,6 @@ dependencies {
 
     compile("wsdl4j:wsdl4j:1.6.1")
 
-    compile project(path: ":javault-core")
-
     testCompile("org.springframework.boot:spring-boot-starter-test")
 
 }
