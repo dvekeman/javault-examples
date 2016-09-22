@@ -1,4 +1,4 @@
-rootProject.name = 'javault'
+rootProject.name = 'javault-examples'
 
 include 'javault-ws'
 include 'javault-runner'

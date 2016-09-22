@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JavaultRunner implements CommandLineRunner {
 
-	private static final String VERSION = "0.0.3";
+	private static final String VERSION = "0.0.4";
 
 	private VaultRunner vaultRunner = new DefaultVaultRunner.Builder().build();
 
